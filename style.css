@@ -16,7 +16,7 @@ body {
   border-radius: 50%;
   border: 1px solid #ffffffbe;
   position: fixed;
-  z-index: 9999;
+  z-index: 999;
   mix-blend-mode: difference;
   /* circle text per color change kr rha tha */
   transform: translate(-50%, -50%);
@@ -101,12 +101,12 @@ body {
 }
 #main {
   position: relative;
-  background-color: #030303;
+  background-color: #151515;
 }
 .page1 {
   height: 100vh; /*aggar % mai denge too fetch nye kre ga parent ko height nye de huye */
   width: 100%;
-  background-color: #1b1b1b;
+  /* background-color: #1b1b1b; */
   /* background-color: #151515; */
 }
 .page1 #nav {
@@ -131,6 +131,8 @@ body {
   margin-left: 27%;
   height: fit-content;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 .hero:nth-child(2) {
   margin-top: 18vh;
@@ -139,4 +141,58 @@ body {
   font-size: 7vw;
   text-transform: uppercase;
   line-height: 7vw;
+}
+.hero h2 {
+  font-size: 7.2vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 7.2vw;
+  border-bottom: 0.5vw solid #fff;
+  padding-bottom: 0.8vw;
+}
+.hero h2:hover {
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+  font-weight: 500;
+  border-bottom: 0.5vw solid #ffffff00;
+}
+.page2 {
+  width: 100%;
+  height: 100vh;
+  padding-top: 8vw;
+}
+#video-container {
+  height: 66vh;
+  width: 71vw;
+  position: relative;
+  left: 28%;
+}
+#video-container video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
+}
+#video-container img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  top: 0;
+}
+#video-cursor {
+  background-color: #ffa63d;
+  height: 8vw;
+  width: 8vw;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -10%;
+  left: 80%;
+  z-index: 999;
+}
+#video-cursor i {
+  font-size: 2vw;
 }
