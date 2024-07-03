@@ -10,6 +10,18 @@ body {
   height: 100%;
   width: 100%;
 }
+#crsr {
+  height: 2.3vw;
+  width: 2.3vw;
+  border-radius: 50%;
+  border: 1px solid #ffffffbe;
+  position: fixed;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  /* circle text per color change kr rha tha */
+  transform: translate(-50%, -50%);
+  /* element ke center ko follow kre cursor */
+}
 #loader {
   height: 100%;
   width: 100%;
@@ -96,4 +108,35 @@ body {
   width: 100%;
   background-color: #1b1b1b;
   /* background-color: #151515; */
+}
+.page1 #nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.3vw 5.5vw;
+}
+#nav-part2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+}
+#nav-part2 h4 {
+  font-size: 0.7vw;
+  font-weight: 500;
+}
+.hero {
+  /* background-color: red; */
+  width: 72%;
+  margin-left: 27%;
+  height: fit-content;
+  overflow: hidden;
+}
+.hero:nth-child(2) {
+  margin-top: 18vh;
+}
+.hero h1 {
+  font-size: 7vw;
+  text-transform: uppercase;
+  line-height: 7vw;
 }
