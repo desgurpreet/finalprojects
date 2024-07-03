@@ -196,3 +196,63 @@ body {
 #video-cursor i {
   font-size: 2vw;
 }
+.page3 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.elem {
+  white-space: nowrap;
+  overflow-x: hidden;
+  margin-bottom: -2vw;
+}
+.elem span {
+  font-style: italic;
+  font-family: "silk serif";
+  color: transparent;
+}
+.elem2 span {
+  font-style: italic;
+  font-family: "silk serif";
+  color: transparent;
+}
+.elem h1 {
+  font-size: 5vw;
+  -webkit-text-stroke: 1px #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: transparent;
+  display: inline-block;
+  margin-right: 16px;
+  animation-name: animee;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes animee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+.elem2 {
+  white-space: nowrap;
+  overflow-x: hidden;
+  margin-bottom: -2vw;
+}
+.elem2 h1 {
+  font-size: 5vw;
+  -webkit-text-stroke: 1px #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: transparent;
+  display: inline-block;
+  margin-right: 16px;
+  animation-name: animee;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
