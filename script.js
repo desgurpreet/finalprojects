@@ -59,6 +59,30 @@ function cursorAnimation() {
     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
     duration: 1,
   });
+  var videoContainer = document.querySelector("#video-container");
+  var video=document.querySelector("#video-container video")
+  videoContainer.addEventListener("mouseenter", function () {
+    videoContainer.addEventListener("mousemove", function (dets) {
+      gsap.to("#crsr", {
+        display: "none",
+      });
+      gsap.to("#video-cursor", {
+        left: dets.x - 410,
+        y: dets.y - 360,
+      });
+    });
+  });
+  videoContainer.addEventListener("mouseleave", function () {
+    gsap.to("#crsr", {
+      display: "initial",
+    });
+    gsap.to("#video-cursor", {
+      left: "60%",
+    });
+  });
+  videoContainer.addEventListener("click",function(){
+    video.play() 
+  })
 }
 loadingAnimation();
 cursorAnimation();
